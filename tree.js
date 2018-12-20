@@ -63,21 +63,22 @@ class Node {
 
 /************************************************/
 //test tree
-let tree = new Tree();
 
-tree.append(5);
-tree.append(1, 5);
-tree.append(3, 5);
-tree.append(7, 5);
-tree.append(4, 1);
-tree.append(2, 1);
-tree.append(9, 1);
-tree.append(8, 3);
-tree.append(6, 7);
-tree.append(12, 4);
-tree.append(13, 4);
-tree.append(10, 8);
-tree.append(11, 8);
-tree.append(14, 11);
+function createTestTree(tree) {
+  tree.append(5);
+  tree.append(1, 5);
+  tree.append(3, 5);
+  tree.append(7, 5);
+  tree.append(4, 1);
+  tree.append(2, 1);
+  tree.append(9, 1);
+  tree.append(8, 3);
+  tree.append(6, 7);
+  tree.append(12, 4);
+  tree.append(13, 4);
+  tree.append(10, 8);
+  tree.append(11, 8);
+  tree.append(14, 11);
+}
 
-tree.print();
+module.exports = { Tree, createTestTree };
